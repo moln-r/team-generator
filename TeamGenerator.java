@@ -10,6 +10,7 @@ public class TeamGenerator {
     public static void generateTeam(List<String> tierOne, List<String> tierTwo) {
         if (isPlayerCountOdd(tierOne, tierTwo)) {
             System.out.println("Get one more player (the total count of players is odd)!");
+            return;
         }
 
         List<Team> teams = new ArrayList<>();

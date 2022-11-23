@@ -17,7 +17,7 @@ public class TeamGenerator {
         }
 
         List<Team> teams = new ArrayList<>();
-        int expectedAmountOfTeams = (totalAmountOfPlayers(tierOne, tierTwo, tierThree) / 2);
+        int expectedAmountOfTeams = totalAmountOfPlayers(tierOne, tierTwo, tierThree) / 2;
 
         while (teams.size() < expectedAmountOfTeams) {
             String player1 = firstRandomPlayer(tierOne, tierTwo, tierThree);
